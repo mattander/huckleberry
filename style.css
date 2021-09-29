@@ -1,12 +1,95 @@
+:root {
+    --color-primary: hsl(160deg, 100%, 30%);
+    --color-secondary: hsl(45deg, 100%, 50%);
+    --color-secondary-dark: hsl(45deg, 100%, 40%);
+    --color-black: hsl(0deg, 0%, 0%);
+    --color-grey-very-dark: hsl(0deg, 0%, 10%);
+    --color-grey-dark: hsl(0deg, 0%, 30%);
+    --color-grey-medium: hsl(0deg, 0%, 40%);
+    --color-grey-light: hsl(0deg, 0%, 60%);
+    --color-grey-white: hsl(0deg, 0%, 100%);
+}
+
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-/* Add styles here! */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-black);
+    margin-top: 0;
+}
+
+strong {
+    color: var(--color-primary);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.5;
+
+    margin: 8px 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+header,
+main {
+    padding: 64px 0;
+}
+
+header {
+    border-bottom: 8px solid var(--color-grey-medium);
+}
+
+main {
+    background: var(--color-grey-light);
+}
+
+.max-width-wrapper {
+    max-width: 980px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0 16px;
+}
+
+.card {
+    background: var(--color-grey-white);
+    border-bottom: 8px solid var(--color-grey-medium);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 16px;
+    padding-top: 8px;
+}
+
+.indented-heading {
+    max-width: max-content;
+
+    background: var(--color-secondary);
+    border-bottom: 8px solid var(--color-secondary-dark);
+    margin-left: -32px;
+    padding: 16px 24px;
+    padding-left: 32px;
+}
