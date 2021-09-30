@@ -23,6 +23,7 @@ body {
 
 html {
     font-size: 1.125rem;
+    color: var(--color-grey-dark);
 }
 
 h1,
@@ -32,17 +33,24 @@ h4,
 h5,
 h6 {
     color: var(--color-black);
-    margin-top: 0;
+    margin: 0;
 }
 
-strong {
+.intro-chunk .title {
+    font-size: 2rem;
+
+    margin-bottom: 48px;
+}
+
+.intro-chunk strong {
     color: var(--color-primary);
 }
 
 p {
-    line-height: 1.5;
+    /* Clamp line length to 75chars for readability */
+    max-width: 75ch;
 
-    margin: 8px 0;
+    line-height: 1.5;
 }
 
 p:last-child {
@@ -65,19 +73,16 @@ main {
 .max-width-wrapper {
     max-width: 980px;
 
-    margin-left: auto;
-    margin-right: auto;
-
-    padding: 0 16px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .card {
     background: var(--color-grey-white);
     border-bottom: 8px solid var(--color-grey-medium);
-    margin-left: -16px;
-    margin-right: -16px;
-    padding: 16px;
-    padding-top: 8px;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 24px;
 }
 
 .indented-heading {
@@ -85,7 +90,7 @@ main {
 
     background: var(--color-secondary);
     border-bottom: 8px solid var(--color-secondary-dark);
+    margin-top: -16px;
     margin-left: -32px;
-    padding: 16px 24px;
-    padding-left: 32px;
+    padding: 16px 32px;
 }
